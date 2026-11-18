@@ -1,0 +1,9 @@
+a = list(map(int, input("Enter numbers: ").split()))
+
+unique = list(set(a))
+unique.sort()
+
+if len(unique) >= 2:
+    print("Second largest:", unique[-2])
+else:
+    print("Second largest does not exist")
