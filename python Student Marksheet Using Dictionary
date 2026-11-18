@@ -1,0 +1,23 @@
+n = int(input("Enter number of subjects: "))
+marks = {}
+
+for i in range(n):
+    sub = input("Enter subject name: ")
+    mark = int(input("Enter mark: "))
+    marks[sub] = mark
+
+total = sum(marks.values())
+avg = total / n
+
+print("Marks:", marks)
+print("Total:", total)
+print("Average:", avg)
+
+if avg >= 90:
+    print("Grade: A")
+elif avg >= 75:
+    print("Grade: B")
+elif avg >= 50:
+    print("Grade: C")
+else:
+    print("Grade: Fail")
